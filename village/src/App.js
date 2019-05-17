@@ -43,10 +43,11 @@ class App extends Component {
   // Notice what your map function is looping over and returning inside of Smurfs.
   // You'll need to make sure you have the right properties on state and pass them down to props.
   render() {
+    console.log(this.state.smurfs);
     return (
       <div className="App">
         <SmurfForm />
-        <Smurfs smurfs={this.state.smurfs} />
+        <Smurfs smurfs={this.state.smurfs}/>
       </div>
     );
   }
